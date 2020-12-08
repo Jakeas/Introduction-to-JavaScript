@@ -277,10 +277,18 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(str) {
+  const alphabet = ["a", "e", "i", "o", "u", "A","E", "I", "O", "U"]
+  let vowelCount = 0
+  for(let i = 0; i < str.length; i++){
+console.log("1st", str[i])
+    if (alphabet.includes(str[i])){
+      vowelCount += 1
+     
+    }
+  }return vowelCount
 }
-
+console.log("final", vowelCounter("bAlloOn"))
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
